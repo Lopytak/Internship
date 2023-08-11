@@ -1,0 +1,51 @@
+@import "nouislider/dist/nouislider.css";
+
+.graySection__rangeSlider {
+    padding-top: var(--paddingTopContainer);
+    padding-bottom: 55px;
+}
+
+.rangeSlider {
+    width: 293px;
+}
+
+.noUi-horizontal {
+    height: 4px;
+    border: 0;
+}
+
+.noUi-connect {
+    background: var(--colorDenim);
+}
+
+.noUi-handle {
+    border-radius: 150px;
+    background: var(--colorDenim);
+    border: 0;
+    cursor: default;
+    box-shadow: 0 2px 6px rgba(37, 38, 43, 0.16);
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 24px;
+    height: 25px;
+    top: -10px;
+}
+
+.noUi-handle::after {
+    content: none;
+}
+
+.noUi-handle::before {
+    content: none;
+}
+
+.noUi-horizontal .noUi-tooltip {
+    font-family: var(--fontFamilyCommon);
+    font-style: var(--fontStyleCommon);
+    font-weight: var(--fontWeightRegular);
+    left: 50%;
+    bottom: -200%;
+    box-shadow: 0 2px 6px rgba(37, 38, 43, 0.16);
+    border: none;
+}

@@ -1,0 +1,89 @@
+@import "swiper/swiper-bundle.css";
+
+.imageSlider {
+    padding-top: var(--paddingTopContainer);
+
+    & .imageSlider__slider {
+        width: 615px;
+        height: 300px;
+
+        & .swiper_slide {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    & .imageSlider__container {
+        margin-right: 140px;
+        margin-left: 0;
+    }
+
+    & .imageSlider__control {
+        margin-top: 45px;
+
+        & .imageSlider__sliderArrows {
+            padding-top: 125px;
+
+            & .sliderArrows__leftArrow {
+                margin-right: 15px;
+            }
+
+            & .leftArrow {
+                transform: rotate(180deg);
+                outline: none;
+            }
+
+            & .swiper-button-next,
+            & .swiper-button-prev {
+                height: 60px;
+                width: 60px;
+                position: static;
+                display: block;
+                background-image: url('./images/arrow.png');
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+                background-position: center;
+                margin-top: 0;
+            }
+
+            & .swiper-button-next::after,
+            & .swiper-button-prev::after {
+                display: none;
+            }
+
+            & .swiper-button-disabled {
+                opacity: 1;
+                background-image: url('./images/arrowDisabled.png');
+            }
+
+            & .swiper-button-next:hover,
+            & .swiper-button-prev:hover {
+                opacity: 0.75;
+            }
+        }
+    }
+}
+
+.sliderCounter__currentSlide,
+.sliderCounter__amountSlides {
+    margin-top: 15px;
+
+    .currentSlide__item,
+    .amountSlides__item {
+        font-family: var(--fontFamilyCommon);
+        font-style: var(--fontStyleCommon);
+        font-weight: var(--fontWeightBold);
+        font-size: 24px;
+        color: var(--colorDenim);
+    }
+
+    .amountSlides__text,
+    .currentSlide__text {
+        font-family: var(--fontFamilyCommon);
+        font-style: var(--fontStyleCommon);
+        font-weight: 400;
+        font-size: 20px;
+        color: var(--colorShark);
+        margin-right: 8px;
+    }
+}

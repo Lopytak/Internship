@@ -1,0 +1,50 @@
+{
+  "name": "grealm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --open --mode development --config frontend/webpack.config.js",
+    "build": "webpack --mode production --config frontend/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.d-element.ru/students_2023/frontend/grealm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^9.1.2",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "eslint": "8.22.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-webpack-plugin": "^4.0.0",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "postcss-loader": "^7.0.2",
+    "postcss-nesting": "^11.2.1",
+    "style-loader": "^3.3.1",
+    "stylelint": "^13.0.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-webpack-plugin": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.13",
+    "html-webpack-plugin": "^5.5.0",
+    "nouislider": "^15.7.0",
+    "postcss-preset-env": "^8.0.1",
+    "pug-loader": "^2.4.0",
+    "swiper": "^9.0.5",
+    "webpack": "^5.75.0",
+    "wnumb": "^1.2.0"
+  }
+}

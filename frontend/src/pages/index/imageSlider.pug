@@ -1,0 +1,23 @@
+.whiteSection
+    .whiteSection__titleSection.titleSection Слайдер
+    .whiteSection__imageSlider.imageSlider.flex--row
+        #imageSlider.imageSlider__slider.imageSlider__container.swiper(data-js-imageslider='{}')
+            .swiper-wrapper
+                .swiper-slide
+                    img(src='./images/slideOne.png', alt='')
+                .swiper-slide
+                    img(src='./images/slideTwo.png', alt='')
+                .swiper-slide
+                    img(src='./images/slideThree.png', alt='')
+        .imageSlider__control
+            .imageSlider__sliderCounter.sliderCounter
+                .sliderCounter__text
+                    .sliderCounter__currentSlide.currentSlide.flex--row
+                        .currentSlide__text Выбранный слайд:
+                        .currentSlide__item 01
+                    .sliderCounter__amountSlides.amountSlides.flex--row
+                        .amountSlides__text Всего слайдов:
+                        .amountSlides__item 06
+            .imageSlider__sliderArrows.sliderArrows.flex--row
+                .sliderArrows__leftArrow.leftArrow.swiper-button-prev
+                .sliderArrows__rightArrow.rightArrow.swiper-button-next

@@ -1,0 +1,71 @@
+@import "pallette.pcss";
+@import "header.pcss";
+@import "rangeSlider.pcss";
+@import "imageSlider.pcss";
+@import "map.pcss";
+@import "popup.pcss";
+
+:root {
+    --paddingSection: 80px 330px;
+    --fontFamilyCommon: 'Proxima Nova', serif;
+    --fontStyleCommon: normal;
+    --paddingTopContainer: 50px;
+    --fontWeightBold: 700;
+    --fontWeightRegular: 400;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/proximaNovaBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/proximaNovaRegular.woff2") format("woff2");
+}
+
+.flex--row {
+    display: flex;
+    flex-direction: row;
+}
+
+.graySection {
+    padding: var(--paddingSection);
+    background: var(--colorAthensGray);
+}
+
+.whiteSection {
+    padding: var(--paddingSection);
+}
+
+.titleSection {
+    font-family: var(--fontFamilyCommon);
+    font-style: var(--fontStyleCommon);
+    font-weight: var(--fontWeightBold);
+    font-size: 40px;
+    color: var(--colorShark);
+}
+
+.btn {
+    background-color: var(--colorDenim);
+    padding: 12px 40px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: var(--colorDanube);
+}
+
+.btn__label {
+    color: white;
+    font-size: 18px;
+    font-family: var(--fontFamilyCommon);
+    font-style: var(--fontStyleCommon);
+    font-weight: var(--fontWeightBold);
+}
